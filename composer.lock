@@ -1,0 +1,461 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "33bc25ecbc26c19f7cba5962ccf61831",
+    "packages": [
+        {
+            "name": "matthiasmullie/minify",
+            "version": "1.3.61",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matthiasmullie/minify.git",
+                "reference": "d5acb8ce5b6acb7d11bafe97cecc533f6e4fd751"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/d5acb8ce5b6acb7d11bafe97cecc533f6e4fd751",
+                "reference": "d5acb8ce5b6acb7d11bafe97cecc533f6e4fd751",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "matthiasmullie/path-converter": "~1.1",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.0",
+                "matthiasmullie/scrapbook": "~1.0",
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "psr/cache-implementation": "Cache implementation to use with Minify::cache"
+            },
+            "bin": [
+                "bin/minifycss",
+                "bin/minifyjs"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MatthiasMullie\\Minify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Mullie",
+                    "email": "minify@mullie.eu",
+                    "homepage": "http://www.mullie.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CSS & JavaScript minifier, in PHP. Removes whitespace, strips comments, combines files (incl. @import statements and small assets in CSS files), and optimizes/shortens a few common programming patterns.",
+            "homepage": "http://www.minifier.org",
+            "keywords": [
+                "JS",
+                "css",
+                "javascript",
+                "minifier",
+                "minify"
+            ],
+            "time": "2018-11-26T23:10:39+00:00"
+        },
+        {
+            "name": "matthiasmullie/path-converter",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matthiasmullie/path-converter.git",
+                "reference": "5e4b121c8b9f97c80835c1d878b0812ba1d607c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matthiasmullie/path-converter/zipball/5e4b121c8b9f97c80835c1d878b0812ba1d607c9",
+                "reference": "5e4b121c8b9f97c80835c1d878b0812ba1d607c9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MatthiasMullie\\PathConverter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Mullie",
+                    "email": "pathconverter@mullie.eu",
+                    "homepage": "http://www.mullie.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Relative path converter",
+            "homepage": "http://github.com/matthiasmullie/path-converter",
+            "keywords": [
+                "converter",
+                "path",
+                "paths",
+                "relative"
+            ],
+            "time": "2018-10-25T15:19:41+00:00"
+        },
+        {
+            "name": "mnapoli/silly",
+            "version": "1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mnapoli/silly.git",
+                "reference": "5f7f34f4db75685e6fe7d652c12d9a7b6e8034d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mnapoli/silly/zipball/5f7f34f4db75685e6fe7d652c12d9a7b6e8034d6",
+                "reference": "5f7f34f4db75685e6fe7d652c12d9a7b6e8034d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "php-di/invoker": "~2.0",
+                "psr/container": "^1.0",
+                "symfony/console": "~3.0|~4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.12",
+                "mnapoli/phpunit-easymock": "~1.0",
+                "phpunit/phpunit": "~6.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Silly\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Silly CLI micro-framework based on Symfony Console",
+            "keywords": [
+                "PSR-11",
+                "cli",
+                "console",
+                "framework",
+                "micro-framework",
+                "silly"
+            ],
+            "time": "2018-12-26T21:17:30+00:00"
+        },
+        {
+            "name": "php-di/invoker",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI/Invoker.git",
+                "reference": "540c27c86f663e20fe39a24cd72fa76cdb21d41a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI/Invoker/zipball/540c27c86f663e20fe39a24cd72fa76cdb21d41a",
+                "reference": "540c27c86f663e20fe39a24cd72fa76cdb21d41a",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "~1.0"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1.8",
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Invoker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Generic and extensible callable invoker",
+            "homepage": "https://github.com/PHP-DI/Invoker",
+            "keywords": [
+                "callable",
+                "dependency",
+                "dependency-injection",
+                "injection",
+                "invoke",
+                "invoker"
+            ],
+            "time": "2017-03-20T19:28:22+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v4.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "b0a03c1bb0fcbe288629956cf2f1dd3f1dc97522"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/b0a03c1bb0fcbe288629956cf2f1dd3f1dc97522",
+                "reference": "b0a03c1bb0fcbe288629956cf2f1dd3f1dc97522",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/contracts": "^1.0",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "conflict": {
+                "symfony/dependency-injection": "<3.4",
+                "symfony/process": "<3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~3.4|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/event-dispatcher": "~3.4|~4.0",
+                "symfony/lock": "~3.4|~4.0",
+                "symfony/process": "~3.4|~4.0"
+            },
+            "suggest": {
+                "psr/log-implementation": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/lock": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Console\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-01-04T15:13:53+00:00"
+        },
+        {
+            "name": "symfony/contracts",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/contracts.git",
+                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "psr/cache": "^1.0",
+                "psr/container": "^1.0"
+            },
+            "suggest": {
+                "psr/cache": "When using the Cache contracts",
+                "psr/container": "When using the Service contracts",
+                "symfony/cache-contracts-implementation": "",
+                "symfony/service-contracts-implementation": "",
+                "symfony/translation-contracts-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\": ""
+                },
+                "exclude-from-classmap": [
+                    "**/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A set of abstractions extracted out of the Symfony components",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "time": "2018-12-05T08:06:11+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/c79c051f5b3a46be09205c73b80b346e4153e494",
+                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2018-09-21T13:07:52+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
