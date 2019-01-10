@@ -1,11 +1,13 @@
 {
 	"name": "manvir1236/cli-minifier",
 	"description": "Command Line Tool For Minify CSS, JS",
+	"license": "MIT",
     "require": {
         "mnapoli/silly": "^1.7",
         "matthiasmullie/minify": "^1.3"
     },
 	"bin": [
 		"minify"
-	]
+	],
+	"minimum-stability": "stable"
 }
