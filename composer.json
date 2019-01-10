@@ -3,9 +3,11 @@
 	"description": "Command Line Tool For Minify CSS, JS",
 	"license": "MIT",
 	"authors": [
-		"name": "Manvir Singh",
-		"email": "manvir.singh@netsolutions.com",
-		"role": "Developer"
+		{
+			"name": "Manvir Singh",
+			"email": "manvir.singh@netsolutions.com",
+			"role": "Developer"
+		}
 	]
     "require": {
 		"php": ">=5.6",
