@@ -1,6 +1,6 @@
 {
 	"name": "manvir/cli-minifier",
-	"description": "Command Line Tool For Minify CSS, JS"
+	"description": "Command Line Tool For Minify CSS, JS",
     "require": {
         "mnapoli/silly": "^1.7",
         "matthiasmullie/minify": "^1.3"
