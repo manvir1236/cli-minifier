@@ -1,5 +1,5 @@
 {
-	"name": "manvir/cli-minifier",
+	"name": "manvir1236/cli-minifier",
 	"description": "Command Line Tool For Minify CSS, JS",
     "require": {
         "mnapoli/silly": "^1.7",
