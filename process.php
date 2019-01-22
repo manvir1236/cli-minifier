@@ -1,6 +1,5 @@
 <?php
-// require(dirname(dirname(__DIR__)).'/autoload.php')
-require 'vendor/autoload.php';
+require(dirname(dirname(__DIR__)).'/autoload.php');
 use MatthiasMullie\Minify;
 $app = new Silly\Application();
 use Symfony\Component\Console\Output\OutputInterface;
