@@ -1,31 +1,26 @@
 <?php
-require(dirname(dirname(__DIR__)).'/autoload.php');
+// require(dirname(dirname(__DIR__)).'/autoload.php')
+require 'vendor/autoload.php';
 use MatthiasMullie\Minify;
 $app = new Silly\Application();
-$app->command('js [filename]', function ($filename) {
-	$file = validateFile($filename);
-	
-	$minifier = new Minify\JS($file);
-	$newfilename = getMinifiedName($filename, 'js');
-	$minifier->minify($newfilename);
+use Symfony\Component\Console\Output\OutputInterface;
+$app->command('min [files]', function ($files,  OutputInterface  $output) {
+	$files = explode(',', $files);
+	foreach ($files as $filename) {
+		$extension = getFileExtension($filename);
+		$file = validateFile($filename, $extension);
+		
+		$minifier = $extension == 'js' ? new Minify\JS($file) : new Minify\CSS($file);
+		$newfilename = getMinifiedName($filename, $extension);
+		$minifier->minify($newfilename);
 
-	$newfile = getcwd().'\\'.$newfilename;
-	
-	echo 'File Minified: Size Reduced From '.getFileSize($file).'Kb To '.getFileSize($newfile).'Kb';
+		$newfile = getcwd().'\\'.$newfilename;
+		
+		$output->writeln($filename.' => Size Reduced From '.getFileSize($file).'Kb To '.getFileSize($newfile).'Kb');
+	}
 })->descriptions('Minify JS Files');
 
-$app->command('css [filename]', function ($filename) {
-	$file = validateFile($filename);
-	
-	$minifier = new Minify\CSS($file);
-	$newfilename = getMinifiedName($filename, 'css');
-	$minifier->minify($newfilename);
-
-	$newfile = getcwd().'\\'.$newfilename;
-	
-	echo 'File Minified: Size Reduced From '.getFileSize($file).'Kb To '.getFileSize($newfile).'Kb';
-})->descriptions('Minify CSS Files');
-$app->run();
+$app->run(); 
 
 
 function getMinifiedName ($name, $type) {
@@ -35,10 +30,16 @@ function getFileSize($file) {
 	$size_in_kb = filesize($file) / 1024;
 	return round($size_in_kb, 2);
 }
-function validateFile ($filename) {
+function validateFile ($filename, $extension) {
 	$file = getcwd().'\\'.$filename;
 	if (!file_exists($file)) {
-		die('File Not Exists');
+		die($filename." Not Exists\n");
+	}
+	if (!in_array($extension, ['css', 'js'])) {
+		die($filename." Is Not a Valid File\n");
 	}
 	return $file;
+}
+function getFileExtension ($filename) {
+	return pathinfo($filename, PATHINFO_EXTENSION);
 }
