@@ -1,6 +1,11 @@
 # cli-minifier
 Command Line Tool for Minify CSS, JS
 
+# Installation
+```sh
+composer global require manvir1236/cli-minifier
+```
+
 # Usage
 - Navigate to directory where CSS, JS files are kept.
 - Run the following Command.
